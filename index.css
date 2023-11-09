@@ -32,6 +32,8 @@ p{
 .sub-body{
     padding-top: 90px;
     position: absolute;
+    left: 50%;
+    transform: translate(-50%)
 }
 
 .fcmi, .fcme, .fcmo{
@@ -55,8 +57,10 @@ p{
 .hc-con, .hc2-con, .fc-con, .fc2-con,.content-2, .content-3, .submit-con {
     padding-left: 40px;
 }
-
-.features-con, .about-con{
+.hc-con-2, .hc2-con-2{
+    padding-right: 40px;
+}
+.features-con, .about-con, .shapes-con-2{
     padding-top: 60px;
 }
 
@@ -480,7 +484,7 @@ transition: 0.5s ease;
 .about-text-con{
     background-color:rgb(255, 255, 255);
     width: 700px;
-    height: 500px;
+    height: 250px;
     border-radius: 40px;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
@@ -489,8 +493,98 @@ transition: 0.5s ease;
     text-align: justify;
     padding-top: 60px;
 }
+.about-read-more{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.read-more-button{
+    border-style: none;
+    width: 250px;
+    height: 70px;
+    border-radius: 50px;
+    color: white;
+    background-color: #003EB2;
+    font-weight: bold;
+    font-size:xx-large; 
+}
+
+.shapes-con-2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.rectangle-2 {
+    height: 40px;
+    width: 900px;
+    background-image: linear-gradient(to right, #003EB2  ,white);
+    border-top-left-radius: 50px;
+    animation: slide2A 3s ease;
+}
+
+.half-circleA{
+    width: 80px;
+    height: 40px;
+    border-radius:12rem 12rem 0 0 ;
+    background-color: #00B274;
+    animation: slide2A 2s ease;
+}
+
+.half-circle2A{
+  width: 40px;
+  height: 20px;
+  border-radius:12rem 12rem 0 0 ;
+  background-color:#0097B2;
+  animation: slide2A 1s ease;
+}
 
 /*<----------------ABOUT--------------->*/
+
+
+/*<----------------FOOTER--------------->*/
+
+footer{
+    background-image: linear-gradient(to right,#0097B2 , #7ED957);
+}
+.connect-nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-content: start;
+    align-items: center;
+}
+
+.icons{
+    width: 50px;
+    height: 50px;
+}
+
+.connect-icon{
+    padding-top: 20px;
+}
+
+.icon-con{
+padding-left: 40px;
+}
+
+.con-nav-link {
+    list-style: none;
+}
+    
+.con-nav-link li {
+        display: inline-block;
+ }
+
+.con-nav-link a {
+    font-size: medium;
+}
+
+/*<----------------FOOTER--------------->*/
+
+
 
 
 /*<----------------ANIMATION--------------->*/
@@ -513,6 +607,15 @@ transition: 0.5s ease;
 @keyframes slide2{
     0%{
         transform: translateX(-500px);}
+   
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide2A{
+    0%{
+        transform: translateX(500px);}
    
     100%{
         transform: translateX(0px);
