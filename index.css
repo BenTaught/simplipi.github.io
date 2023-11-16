@@ -33,7 +33,7 @@ p{
     padding-top: 90px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%)
+    transform: translate(-50%);
 }
 
 .fcmi, .fcme, .fcmo{
@@ -783,5 +783,9 @@ padding-left: 40px;
         transform: rotate(360deg);
     }
 }
+
+
+
+
 
 
