@@ -2,266 +2,204 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpliPIE | Landing page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images-icons/π-removebg-preview-removebg-preview.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
     <header>
-        <nav  class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Thirteenth navbar example">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="#"> <img src="images-icons/π-removebg-preview-removebg-preview.png" class="img-fluid" width="50" height="50" ></a>
-            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="#About">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#FAQ">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#Features">Features</a>
-              </li>
-            </ul>
-            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <button class="btn btn-primary">Login</button>
-            </div>
-          </div>
+        <div class="subhead">
+             <div class="logo-con"><img class="logo" src="images-icons/π-removebg-preview-removebg-preview.png" alt="logo"></div>
+             <div class="nav-con">
+                    <nav>
+                        <ul class="nav-link">
+                            <li><a class = "list" href="#about">About</a></li>
+                            <li><a class = "list" href="#contact">Contact</a></li>
+                            <li><a class = "list" href="#faq">FAQ</a></li>
+                            <li><a class = "list" href="#features">Features</a></li>
+                        </ul>       
+                    </nav>
+
+                    <button id="myButton">Login</button>
+
+                        <div id="myPopup" class="popup">
+
+                            <div class="popup-content">
+                        
+                                    <button id="closePopup" class="close">
+                                       <img src="images-icons/close.png" alt="close" style="width:20px; height: 20px;">
+                                    </button>
+                              
+                                <form class="pop-up-form">
+                                    
+                                            <h2>Login Form</h2><br>
+                                            <hr><br><br>
+                                            <input type="email" placeholder="Email"><br><br><br>
+                                            <input type="password" placeholder="Password"><br><br>
+                                            <a href="http://" style="color: #00BF63;" target="_blank">Forget Password</a><br><br>
+                                            <hr><br>
+                                            <a href="http://" target="_blank" rel="noopener noreferrer"><button class="login">
+                                                Login
+                                            </button></a><br>
+                                            <h4>Not a member? <a href="http://" style="color: #00BF63;" target="_blank">Signup now</a>
+                                            </form></h4><br>
+            
+                            </div>
+
+                        </div>
+             </div> 
         </div>
-      </nav>
+
     </header>
 
-    
-    <section >
-      <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="images-icons/img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">Welcome to SimpliPIE</h1>
-            <h2 >Mathematics in Simplest Form</h2>
-            <p class="lead">Unlock the power of understanding with SimpliPIE, your go-to mathematical tool that unravels the complexities of math topics, making them accessible to all by transforming intricate concepts into digestible, simple insights.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get started</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
    
-    <section id = "Features">
-        <div class="container px-4 py-5" id="hanging-icons">
-            <h2 class="pb-2 border-bottom">Features</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-              <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-puzzle-fill" viewBox="0 0 16 16">
-                        <path d="M3.112 3.645A1.5 1.5 0 0 1 4.605 2H7a.5.5 0 0 1 .5.5v.382c0 .696-.497 1.182-.872 1.469a.459.459 0 0 0-.115.118.113.113 0 0 0-.012.025L6.5 4.5v.003l.003.01c.004.01.014.028.036.053a.86.86 0 0 0 .27.194C7.09 4.9 7.51 5 8 5c.492 0 .912-.1 1.19-.24a.86.86 0 0 0 .271-.194.213.213 0 0 0 .036-.054l.003-.01v-.008a.112.112 0 0 0-.012-.025.459.459 0 0 0-.115-.118c-.375-.287-.872-.773-.872-1.469V2.5A.5.5 0 0 1 9 2h2.395a1.5 1.5 0 0 1 1.493 1.645L12.645 6.5h.237c.195 0 .42-.147.675-.48.21-.274.528-.52.943-.52.568 0 .947.447 1.154.862C15.877 6.807 16 7.387 16 8s-.123 1.193-.346 1.638c-.207.415-.586.862-1.154.862-.415 0-.733-.246-.943-.52-.255-.333-.48-.48-.675-.48h-.237l.243 2.855A1.5 1.5 0 0 1 11.395 14H9a.5.5 0 0 1-.5-.5v-.382c0-.696.497-1.182.872-1.469a.459.459 0 0 0 .115-.118.113.113 0 0 0 .012-.025L9.5 11.5v-.003l-.003-.01a.214.214 0 0 0-.036-.053.859.859 0 0 0-.27-.194C8.91 11.1 8.49 11 8 11c-.491 0-.912.1-1.19.24a.859.859 0 0 0-.271.194.214.214 0 0 0-.036.054l-.003.01v.002l.001.006a.113.113 0 0 0 .012.025c.016.027.05.068.115.118.375.287.872.773.872 1.469v.382a.5.5 0 0 1-.5.5H4.605a1.5 1.5 0 0 1-1.493-1.645L3.356 9.5h-.238c-.195 0-.42.147-.675.48-.21.274-.528.52-.943.52-.568 0-.947-.447-1.154-.862C.123 9.193 0 8.613 0 8s.123-1.193.346-1.638C.553 5.947.932 5.5 1.5 5.5c.415 0 .733.246.943.52.255.333.48.48.675.48h.238l-.244-2.855z"/>
-                      </svg>
-                </div>
-                <div>
-                  <h3>Personalized Learning Paths</h3>
-                  <p>SimpliPIE tailors unique study plans, analyzing your needs and offering specific learning tasks, ensuring personalized and effective study guidance.</p>
-                  <a href="#" class="btn btn-primary">
-                    Read more
-                  </a>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
-                        <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
-                        <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
-                      </svg>
-                </div>
-                <div>
-                  <h3>Real-Time Performance Analytics</h3>
-                  <p>SimpliPIE swiftly assesses your performance, providing instant, personalized feedback that highlights strengths and pinpoints areas for improvement with precision.</p>
-                  <a href="#" class="btn btn-primary">
-                    Read more
-                  </a>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
-                        <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2z"/>
-                      </svg>
-                </div>
-                <div>
-                  <h3>Unlockable Topic Advancement</h3>
-                  <p>In Simpliπ, success in a lesson unlocks new learning opportunities, creating a game-like experience where you earn and progress through levels.</p>
-                  <a href="#" class="btn btn-primary">
-                    Read more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
+    <section class="sub-body"> 
 
-    <section id="FAQ" >
-        <section class="pb-4">
-            <div class="container px-4 py-5" id="hanging-icons">
-                <h2 class="pb-2 border-bottom">FAQ</h2>
-                <section class="p-4 d-flex justify-content-center w-100" style="border-radius: .5rem; background-color:#e9e2e2;">
-                  <!--Section: FAQ-->
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-4">
-          
-                      <!--Questions -->
-                      <section>
-          
-                        <!--Question -->
-                        <div>
-                          <p class="mb-1">
-                            <strong> How does SimpliPIE reward success in lessons?</strong>
-                          </p>
-                          <p class="mb-1">
-                            Achieving success in a lesson unlocks new learning opportunities, akin to a game where users earn levels.
-                          </p>
-                        </div>
-          
-                        <!--Question -->
-                        <div>
-                          <p class="mb-1">
-                            <strong> Is SimpliPIE suitable for all skill levels?</strong>
-                          </p>
-                          <p class="mb-1">
-                            Absolutely! SimpliPIE is designed for learners of all levels, providing a personalized and engaging experience.
-                          </p>
-                        </div>
-                        <!--Question -->
-                        <div>
-                          <p class="mb-1">
-                            <strong> Is SimpliPIE like a traditional educational platform?</strong>
-                          </p>
-                          <p class="mb-1">
-                            No, it's more! SimpliPIE combines learning with a game-like structure, making education dynamic, rewarding, and enjoyable.
-                          </p>
-                        </div>
-          
-                        <!--Question -->
-                        <div>
-                          <p class="mb-1">
-                            <strong>Is SimpliPIE suitable for both beginners and advanced learners?</strong>
-                          </p>
-                          <p class="mb-1">
-                            Yes, SimpliPIE caters to learners of all levels, offering a supportive and challenging environment for growth and mastery.
-                          </p>
-          
-                      </section>
-                      <!--/Questions visible to all-->
-          
-          
-                    </div>
-          
-                    <div class="col-lg-6 col-md-12 text-center">
-          
-          
-          
-                      <!--Section: Contact Form-->
-                      <section>
-                        <p>
-                          <span class="fw-bold">
-                            Still have any questions? Contact us to get your answer!</span>
-                        </p>
-                        <form action="" method="POST" class="faq-contact-form">
-          
-                          <!-- Email input -->
-                          <div class="form-outline mb-4">
-                            <input type="email" id="form4Example2" class="form-control" name="email" required="">
-                            <label class="form-label" for="form4Example2" style="margin-left: 0px;">Email address</label>
-                          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
-          
-                          <!-- Message input -->
-                          <div class="form-outline mb-4">
-                            <textarea class="form-control" id="form4Example3" rows="4" name="message" required=""></textarea>
-                            <label class="form-label" for="form4Example3" style="margin-left: 0px;">Message</label>
-                          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 60px;"></div><div class="form-notch-trailing"></div></div></div>
-          
-                          <!-- Checkbox -->
-          
-          
-                          <!-- Submit button -->
-                          <input type="submit" class="btn btn-primary btn-block mb-4 faq-contact-form-submit" value="SEND">
-                          <input type="hidden" name="recaptcha-response" id="recaptchaFaqForm">
-                        </form>
-          
-          
-                      </section>
-                      <!--/Section: Newsletter-->
-                    </div>
-                  </div>
-                  <!--Section: FAQ-->
-                </section>
+        <div class="shapes-con">
+            <div class="rectangle"></div>
+            <div class="hc-con"><div class="half-circle"></div></div>
+            <div class="hc2-con"><div class="half-circle2"></div></div>
+        </div>
         
+        <div class="homepage-con">
+            <div class="left-content">
+                <div class="full-logo-con">
+                    <p>Simpli</p> <img class="big-logo" src="images-icons/π-removebg-preview-removebg-preview.png" alt="logo">
+                </div>
+                <div class="tagline-con">
+                    <p class="tagline">Mathematics in Simplest Form</p>
+                </div>
+                <div class="button-shapes-con">
+                    <a href="http://" target="_blank"><button class="get-started-button">Get Started</button></a>
+                    <div class="fc-con"><div class = "full-circle"></div></div>
+                    <div class="fc2-con"><div class = "full-circle2"></div></div>
+                </div>
             </div>
-          </section>
-    </section>
+
+            <div class="right-content">
+                <img class="image-1" src="images-icons/img2.png" alt="pic">
+            </div>
+        </div>
+
+        <div class="features-con" id="features">
+            <div class="features-subhead-con">
+                <img class="features-logo" src="images-icons/Add a heading (3).png" alt="features"><p class="title-features" >Features</p>
+                <div class="circles-features-con">
+                    <div class="fc-con"><div class = "fcmi"></div></div>
+                    <div class="fc-con"><div class = "fcme"></div></div>
+                    <div class="fc-con"><div class = "fcmo"></div></div>
+                </div>
+            </div>
+
+            <div class="features-content-con">
+                <div class="content-1"><p class="feature-head">Personalized Learning Paths</p><div class="feature-1-square-con"><div class ="puzzle-con"><img  class="puzzle" src="images-icons/puzzle.png" alt=""></div><p class="feature-def"> <em>Simpliπ</em> creates special study plans just for you. <br><br> It figures out what you need to learn and gives you specific things to study. </p></div></div>
+                <div class="content-2"><p class="feature-head">Real-Time Performance Analytics</p><div class="feature-2-square-con"><div class="speed-con"><img  class="speed" src="images-icons/speed.png" alt=""></div><p class="feature-def"><em>Simpliπ</em> tells you how well you're doing right away. <br><br> It shows you what you're good at and where you need to improve.</p></div></div>
+                <div class="content-3"><p class="feature-head">Unlockable Topic Advancement</p><div class="feature-3-square-con"><div class="lock-con"><img  class="lock" src="images-icons/lock.png" alt=""></div><p class="feature-def">In <em>Simpliπ</em>, when you do well in one lesson, you get to learn something new! <br><br> It's like a game where you earn new levels.</p></div></div>
+            </div>
+        </div>
+        
+        <div class="faq-con" id="faq">
+            <div class="sub-faq1-con">
+                <div class="faq-subhead-con">
+                    <img class="faq-logo" src="images-icons/Add a heading (1).png" alt="FAQ"><p class="title-faq">FAQ</p>
+                    <div class="circles-faq-con">
+                        <div class="fc-con"><div class = "fcmi"></div></div>
+                        <div class="fc-con"><div class = "fcme"></div></div>
+                        <div class="fc-con"><div class = "fcmo"></div></div>
+                    </div>
+                </div>
+                
+                <div class="question-con">
+                    <div class = "question-content-con">
+                        <div class="textarea-con"><textarea maxlength="100" name="FAQ" class="text-area" cols="30" rows="6" placeholder="Ask a new question"></textarea></div>
+                    </div>
     
-    <section id="About">
-        <div class="container col-xxl-8 px-4 py-5" >
-            <h2 class="pb-2 border-bottom">About</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="images-icons/us.png"  class="img-fluid" width="450" height="450">
+                    <div class="faq-button-con">
+                        <div class="clear-con"><a href="http://"><button class="faq-button">Clear</button></a></div>
+                        <div class="submit-con"><a href=""><button class="faq-button">Submit</button></a></div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                   
-                    <div class="lc-block mb-3">
-                        <div editable="rich">
-                            <p class="lead">Welcome to SimpliPIE, where a passion for education meets the simplicity of learning. We believe in making complex subjects accessible and enjoyable for everyone. Our journey began with a simple yet profound idea: to transform the way we approach learning, particularly in the realm of mathematics.</p>
-                        </div>
+            </div>
+            <div class = "sub-faq2A-con">
+                <div class="sub-faq2-con">
+                    <div class="slider-text">
+                        <h2>Lorem, ipsum dolor</h2><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam adipisci eaque exercitationem unde, dolor molestiae voluptatem. Est enim repellat corporis labore culpa deleniti eum in totam quaerat recusandae repellendus atque nam esse quas ex nisi reiciendis omnis, iure id quam. Esse nemo dolores ut consequuntur doloribus expedita minima reprehenderit maiores. Voluptatibus ex, saepe est architecto aliquam totam, molestiae accusamus voluptate eum eaque quam dolore dolorum harum facere excepturi aspernatur dolor?<br><br><br><br><br><br><br>
+                        <h2>Lorem, ipsum dolor</h2><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis officia hic eum optio fugit. Corporis nihil porro consectetur quo reiciendis esse eum maiores libero provident quaerat neque alias ipsum, praesentium assumenda numquam consequatur ea! Odio voluptatum ex error cupiditate dolorum magni blanditiis, reprehenderit iusto dolores debitis quia temporibus consequatur accusantium recusandae neque ea sunt explicabo voluptas adipisci quasi est nihil. Quis, provident rerum sint asperiores velit hic debitis temporibus?<br><br><br><br><br><br><br>
+                        <h2>Lorem, ipsum dolor</h2><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nobis itaque nisi accusamus tenetur quis aspernatur excepturi recusandae velit similique qui sequi eaque veniam aliquid cupiditate soluta consequatur accusantium vel dignissimos assumenda! Earum commodi reprehenderit porro ducimus voluptatibus eaque quos incidunt officiis laudantium corporis, cum iure, explicabo fugiat beatae natus odio voluptas dolor amet quia fuga molestias? Nobis, maxime? Nulla minima cum odio est soluta reiciendis corrupti esse tempora blanditiis!<br><br><br><br><br><br><br>
+                        <h2>Lorem, ipsum dolor</h2><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, unde quo? Laudantium itaque porro animi veniam nesciunt culpa accusantium asperiores, nihil rem, unde magnam architecto expedita! Unde, obcaecati delectus numquam iusto recusandae, illo dignissimos illum deserunt pariatur assumenda doloremque nihil dicta. Delectus inventore nostrum aspernatur doloribus placeat, voluptatem at quos dolore quas expedita asperiores modi maxime veniam nesciunt porro quia impedit omnis corporis, harum repudiandae? Incidunt voluptatem aliquid tenetur eveniet!<br><br><br><br>
                     </div>
-
-                    <div class="lc-block mb-3">
-                        <div editable="rich">
-                            <p class="lead">At SimpliPIE, we understand that each learner is unique, with individual strengths and areas for improvement. That's why we've dedicated ourselves to creating a mathematical tool that not only simplifies concepts but also adapts to your learning style. Our mission is to empower learners of all levels to embrace the beauty of mathematics without intimidation.</p></div>
-                    </div>
-        
-                    <div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">Read more</a></div>
-        
                 </div>
             </div>
         </div>
+
+        <div class="about-con" id="about">
+            <div class="about1-con">
+                <div class="about-subhead-con"><img class="about-logo" src="images-icons/Add a heading (4).png" alt="about"><p class="title-about" >About us</p>
+                    <div class="circle-about-con">
+                        <div class="fc-con"><div class = "fcmi"></div></div>
+                        <div class="fc-con"><div class = "fcme"></div></div>
+                        <div class="fc-con"><div class = "fcmo"></div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about2-con">
+                <div class="about-image-con">
+                    <img class="image-2" src="images-icons/us.png" alt="us">
+                </div>
+                <div class = "about3-con">
+                    <div class="about-text-con">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatum, eius reiciendis odit laboriosam voluptate eum non accusamus sapiente vero, ex magni porro ipsum? Nisi officia voluptatibus deleniti reprehenderit commodi temporibus suscipit repellat ut dolore optio? Incidunt cum, necessitatibus, similique, ducimus dolore ea excepturi voluptate suscipit recusandae nisi saepe alias dolorum asperiores laborum ex? Repellat adipisci officiis, nihil ex facere cupiditate architecto vitae inventore quas enim perferendis alias distinctio harum laboriosam quo facilis velit tempore vero? Quas odio in suscipit?
+                        <div class="about-read-more"><a href="http://" target="_blank"><button class="read-more-button">read more</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="shapes-con-2">
+            <div class="hc2-con-2"><div class="half-circle2A"></div></div>
+            <div class="hc-con-2"><div class="half-circleA"></div></div>
+            <div class="rectangle-2"></div>
+        </div>
+
+        <footer id="contact">
+            <div class="subfoot">
+                <div class="connect-con">
+                       <nav class="connect-nav">
+                           <ul class="con-nav-link">
+                               <li><a class = "list" href="https://" target="_blank">COMMUNITY</a></li>
+                               <li><a class = "list" href="https://" target="_blank">HELP CENTER</a></li>
+                               <li><a class = "list" href="https://" target="_blank">TERMS & PRIVACY</a></li>
+                               <li><span class="connect-text-con"><i>CONNECT WITH US ON:</i></span></li>
+                           </ul>
+                           <div class="connect-icon">
+                                <a class = "icon-con" href="https://www.facebook.com/jirehben.lagumbaybustillo" target="_blank" rel="noopener noreferrer" ><img class ="icons" src="images-icons/fb-icon.png" alt="fb-icon"></a>
+                                <a class = "icon-con" href="https://www.instagram.com/pintagur0/?fbclid=IwAR1xI_W9kQH7q1X5n0J0sejQKlCQZDk3xiL0H7V_NjOVe7xsciqYzMmulJU" target="_blank" rel="noopener noreferrer" ><img class ="icons" src="images-icons/ig.png" alt="ig-icon"></a>
+                                <a class = "icon-con" href="https://twitter.com/bustillo_j10879" target="_blank" rel="noopener noreferrer" ><img class ="icons" src="images-icons/twitter.png" alt="twitter-icon"></a>
+                                <a class = "icon-con" href="tel:+639388117145" target="_blank" rel="noopener noreferrer" ><img class ="icons" src="images-icons/wa.png" alt="whats app-icon"></a>
+                                <a class = "icon-con" href="mailto:bustillojireh1@gmail.com" target="_blank" rel="noopener noreferrer" ><img class ="icons" src="images-icons/mail.png" alt="mail-icon"></a>
+                            </div>     
+                       </nav>
+                </div> 
+           </div>
+        </footer>
+
     </section>
 
-    <footer>
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                  <img src="images-icons/π-removebg-preview-removebg-preview.png" class="img-fluid" width="35" height="35">
-                </a>
-                <span class="mb-3 mb-md-0 text-muted">© 2023 SimpliPIE</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                  </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg></a></li>
-                <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg></a></li>
-              </ul>
-            </footer>
-          </div>
-    </footer>
+    <script>
+        myButton.addEventListener("click", function () {
+            myPopup.classList.add("show");
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.classList.remove("show");
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.classList.remove("show");
+            }
+        });
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
