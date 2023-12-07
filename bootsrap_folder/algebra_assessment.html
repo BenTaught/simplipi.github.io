@@ -69,8 +69,8 @@
           </ul>
           <div class="d-lg-flex col-lg-4 justify-content-end">
             <form class="me-lg-2 d-flex">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light ms-2 me-4" type="submit">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search" disabled>
+              <button class="btn btn-outline-light ms-2 me-4" type="submit" disabled>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
@@ -143,16 +143,16 @@
                         <div class="d-flex flex-row align-items-center question-title">
                             <h5 class="mt-1 ml-2">1. Define the term "quadratic equation."</h5>
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="brazil" value="brazil"> <span>An equation involving two variables.</span>
+                        <label class="radio"> <input type="radio" name="answer1"> <span>An equation involving two variables.</span>
                         </label>    
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Germany" value="Germany"> <span>An equation of degree two with one variable.</span>
+                        <label class="radio"> <input type="radio" name="answer1"> <span>An equation of degree two with one variable.</span>
                         </label>    
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Indonesia" value="Indonesia"> <span>A linear equation with two variables.</span>
+                        <label class="radio"> <input type="radio" name="answer1"> <span>A linear equation with two variables.</span>
                         </label>    
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Russia" value="Russia"> <span>An equation with a single variable raised to the power of three.</span>
+                        <label class="radio"> <input type="radio" name="answer1"> <span>An equation with a single variable raised to the power of three.</span>
                         </label>    
                         </div></div>
                         
@@ -160,18 +160,71 @@
                         <div class="d-flex flex-row align-items-center question-title">
                             <h5 class="mt-1 ml-2">2. An equation with a single variable raised to the power of three.</h5>
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="brazil" value="brazil"> <span>The distance of a number from zero on the number line.</span>
+                        <label class="radio"> <input type="radio" name="answer2"> <span>The distance of a number from zero on the number line.</span>
                         </label>    
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Germany" value="Germany"> <span>The square root of a number.</span>
+                        <label class="radio"> <input type="radio" name="answer2"> <span>The square root of a number.</span>
                         </label>    
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Indonesia" value="Indonesia"> <span> The product of two numbers.</span>
+                        <label class="radio"> <input type="radio" name="answer2"> <span> The product of two numbers.</span>
                         </label>    
                         </div><div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Russia" value="Russia"> <span>The sum of two numbers.</span>
+                        <label class="radio"> <input type="radio" name="answer2"> <span>The sum of two numbers.</span>
                         </label>    
                         </div></div>
+
+                        <div class="question bg-white p-5 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h5 class="mt-1 ml-2">3. Solve for x: 2x + 5 = 11.</h5>
+                            </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="answer3"> <span>x = 3</span>
+                            </label>    
+                            </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="answer3"> <span>x = 2</span>
+                            </label>    
+                            </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="answer3"> <span>x = 6</span>
+                            </label>    
+                            </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="answer3"> <span>x = 4</span>
+                            </label>    
+                            </div></div>
+
+                            <div class="question bg-white p-5 border-bottom">
+                                <div class="d-flex flex-row align-items-center question-title">
+                                    <h5 class="mt-1 ml-2">4. Find the value of y in the equation 4y - 9 = 7.</h5>
+                                </div><div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="answer4"> <span>y = 3</span>
+                                </label>    
+                                </div><div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="answer4"> <span>y = 2</span>
+                                </label>    
+                                </div><div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="answer4"> <span>y = 6</span>
+                                </label>    
+                                </div><div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="answer4"> <span>y = 4</span>
+                                </label>    
+                                </div></div>
+
+                                <div class="question bg-white p-5 border-bottom">
+                                    <div class="d-flex flex-row align-items-center question-title">
+                                        <h5 class="mt-1 ml-2">5.  Solve the inequality 2x + 7 < 15.</h5>
+                                    </div><div class="ans ml-2">
+                                    <label class="radio"> <input type="radio" name="answer5"> <span>x < 4 </span>
+                                    </label>    
+                                    </div><div class="ans ml-2">
+                                    <label class="radio"> <input type="radio" name="answer5"> <span>x > 4</span>
+                                    </label>    
+                                    </div><div class="ans ml-2">
+                                    <label class="radio"> <input type="radio" name="answer5"> <span>x < 6</span>
+                                    </label>    
+                                    </div><div class="ans ml-2">
+                                    <label class="radio"> <input type="radio" name="answer5"> <span>x > 4</span>
+                                    </label>  
+                                    <div class=" text-end"><a href="algebra_book.html"><button class="btn btn-success">Submit</button></a></div>  
+                                    </div></div>
+                                    
                 
                 </div>
             </div>
