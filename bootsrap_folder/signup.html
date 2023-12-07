@@ -179,26 +179,31 @@
       </div>
   </footer>
 
-    <script>
-      function checkLogin() {
-        // Get the input elements by their IDs
-        var emailInput = document.getElementById("email");
-        var passwordInput = document.getElementById("pass");
-                              
-        // Get the values of the inputs
-        var emailValue = emailInput.value;
-        var passwordValue = passwordInput.value;
-                              
-        // Check if email and password match the expected values
-        if (emailValue === "admin" && passwordValue === "181306") {
-        alert("Login successful!");
-        window.location.href = "admin.html";
-        // You can redirect to another page or perform other actions here
-        } else {
-        alert("Invalid email or password. Please try again.");
-        }
-      }                            
-    </script>  
+  <script>
+    function checkLogin() {
+      // Get the input elements by their IDs
+      var emailInput = document.getElementById("email");
+      var passwordInput = document.getElementById("pass");
+                            
+      // Get the values of the inputs
+      var emailValue = emailInput.value;
+      var passwordValue = passwordInput.value;
+                            
+      // Check if email and password match the expected values
+      if (emailValue === "admin" && passwordValue === "181306") {
+      alert("Login successful!");
+      window.location.href = "admin.html";
+      // You can redirect to another page or perform other actions here
+      }
+      else if (emailValue === "client" && passwordValue === "181306") {
+      alert("Login successful!");
+      window.location.href = "client_home.html";
+
+      } else {
+      alert("Invalid email or password. Please try again.");
+      }
+    }                            
+  </script>  
 
 <script>
   function register() {
