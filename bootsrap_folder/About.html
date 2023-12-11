@@ -23,6 +23,15 @@
   color: white;
   }
 
+.animate-card {
+    opacity: 0;
+    transition: opacity .75s ease;
+}
+
+.animate-card.show {
+    opacity: 1;
+}
+
 </style>
 
 </style>
@@ -89,167 +98,329 @@
     </nav>
   </header>
 
-  <section  class="container py-5">
+  <div class="container-fluid">
+    <div class="row p-2">
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-9 pt-2">
+        <div class="col-lg-12 pb-1 ">
+          <article class="m-2 shadow rounded" id="carousel">
+              <div class="bd-example">
+              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                </div>
+                <div class="carousel-inner" style="border-radius: .5rem;">
+                  <div class="carousel-item active">
+                    <img  src="images-icons/home_img_1.png" class="d-block w-100 img-fluid" width="400" height="400" alt="First Slide Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images-icons/home_img_2.png" class="d-block w-100 img-fluid" width="400" height="400" alt="First Slide Image">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images-icons/home_img_3.png" class="d-block w-100 img-fluid" width="400" height="400" alt="First Slide Image">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              </div>
+            </article>
+        </div>
 
-          <main role="main" class="container">
-
-                <div class="blog-post pt-5">
-
-                  <section id="About">
-                    <div class="container col-xxl-8">
-                        <div class="row flex-lg-row-reverse align-items-center g-4">
-                            <div class="col-12 col-lg-6 text-center"> <!-- Center the image on all screen sizes -->
-                                <img src="images-icons/img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="800" height="500" loading="lazy">
-                            </div>
-                            <div class="col-lg-6 ">
-                              <h1>About us</h1>
-                              <p><h5>Welcome to SIMPLIPIE, where a passion for education meets the simplicity of learning. We believe in making complex subjects accessible and enjoyable for everyone. </h5><br> Our journey began with a simple yet profound idea: to transform the way we approach learning, particularly in the realm of mathematics.
-                               At SIMPLIPIE, we understand that each learner is unique, with individual strengths and areas for improvement. That's why we've dedicated ourselves to creating a mathematical tool that not only simplifies concepts but also adapts to your learning style. Our mission is to empower learners of all levels to embrace the beauty of mathematics without intimidation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    </section>
-
-                    <br><br><br><br>
-                    <hr style="color: black;"><br>
-                    <h2 class="text-center">What Sets Us Apart?</h2>
-                    <br><hr style="color: black;">
-                    <br><br><br>
-
-                    <br id="feature-1"><br>
-
-                    <section id = "Features">
+        <section class="w-100 px-2 pb-3 animate-card">
+          <div class="my-3 p-3 bg-white rounded shadow">
+            <div class="d-flex justify-content-between">
+              <div>
+                <section id="About">
                       <div class="container col-xxl-8">
-                          <div class="row flex-lg-row-reverse align-items-center g-4">
+                          <div class="row flex-lg-row-reverse align-items-center g-2">
                               <div class="col-12 col-lg-6 text-center"> <!-- Center the image on all screen sizes -->
-                                  <img src="images-icons/path2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
+                                  <img src="images-icons/img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="800" height="500" loading="lazy">
                               </div>
-                              <div class="col-lg-6">
-                                <h4>Personalized Learning Paths</h4><br>
-                                 At the heart of SIMPLIPIE's innovative approach to education is the emphasis on personalized learning paths. Unlike traditional one-size-fits-all methods, SIMPLIPIE recognizes the unique nature of each learner. By harnessing advanced technologies, the platform meticulously analyzes individual needs, learning preferences, and historical performance data. This comprehensive understanding allows SIMPLIPIE to construct tailored study plans, ensuring that each user receives a customized roadmap for their educational journey. The platform's commitment to adaptability creates an environment where study sessions are not just educational tasks but transformative experiences uniquely suited to individual learners.
+                              <div class="col-lg-6 p-3" style="text-align: justify;">
+                                <h1>About us</h1>
+                                <h5>Welcome to SIMPLIPIE, where a passion for education meets the simplicity of learning.</h5>
+                                <p >Our journey began with a simple yet profound idea: to transform the way we approach learning, particularly in the realm of mathematics.
+                                At SIMPLIPIE, we understand that each learner is unique, with individual strengths and areas for improvement. That's why we've dedicated ourselves to creating a mathematical tool that not only simplifies concepts but also adapts to your learning style. Our mission is to empower learners of all levels to embrace the beauty of mathematics without intimidation.</p>
                               </div>
                           </div>
-                          <br>SIMPLIPIE's personalized learning paths go beyond the surface, actively adapting to the user's pace and learning style. This dynamic approach means that each learning session is finely tuned to maximize growth and understanding. Through specific learning tasks aligned with individual strengths and areas for improvement, SIMPLIPIE establishes itself as a dedicated guide on the educational path, fostering an environment where success is not only achievable but inherently personalized and meaningful.
                       </div>
-                    </section>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+        
 
-                    <br><br>
+        <section id="Features" class="w-100 px-2 pb-4 ">
+          <div class="row g-4">
+        
+            <div class="col-12 animate-card">
+              <div class="card shadow" style="background-color: #2cca96; border: none;">
+                <div class="card-body">
+                  <h2 style="text-align: center;">What Sets Us Apart?</h2>
+                </div>
+              </div>
+            </div>
 
-                    <br id="feature-2"><br>
+          
+            <div id="feature-1" class="col-lg-5 animate-card">
+              <div class="card h-100 shadow" style="border: none; background-color: #ffffff;">
+                <img src="images-icons/path2.png" class="card-img-top img-fluid" style="padding: 18%;">
+              </div>
+            </div>
+        
+            <div class="col-lg-7 animate-card">
+              <div class="card h-100 shadow" style="border: none; background-color: rgb(220, 241, 241);">
+                <div class="card-body p-4" style="text-align: justify;">
+                  <h4 class="card-title">Personalized Learning Paths</h4>
+                  <p>At the heart of SIMPLIPIE's innovative approach to education is the emphasis on personalized learning paths. Unlike traditional one-size-fits-all methods, SIMPLIPIE recognizes the unique nature of each learner. By harnessing advanced technologies, the platform meticulously analyzes individual needs, learning preferences, and historical performance data. This comprehensive understanding allows SIMPLIPIE to construct tailored study plans, ensuring that each user receives a customized roadmap for their educational journey. The platform's commitment to adaptability creates an environment where study sessions are not just educational tasks but transformative experiences uniquely suited to individual learners.</p>
+                </div>
+              </div>
+            </div>
+       
 
-                    <section>
-                      <div class="container col-xxl-8">
-                          <div class="row flex-lg-row-reverse align-items-center g-4">
-                              <div class="col-12 col-lg-6 text-center"> <!-- Center the image on all screen sizes -->
-                                  <img src="images-icons/perrformance2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
-                              </div>
-                              <div class="col-lg-6">
-                                <h4>Real-Time Performance Analytics</h4><br>
-                                In the realm of educational technology, real-time feedback is a game-changer, and SIMPLIPIE excels in delivering instant, personalized insights through its performance analytics feature. As users engage with the platform, SIMPLIPIE swiftly assesses their performance, providing detailed feedback that goes beyond generic praise. This feature serves as a dynamic compass, highlighting individual strengths for acknowledgment and encouragement, while also pinpointing specific areas for improvement with remarkable precision.
-                              </div>
-                          </div>
-                          <br>The real-time analytics on SIMPLIPIE act as a constant feedback loop, transforming the learning experience into a proactive and responsive journey. This immediate insight not only deepens the understanding of personal progress but also serves as a powerful motivator, ensuring that each learning session contributes meaningfully to overall development. In this way, SIMPLIPIE revolutionizes the learning process, making it not just informative but also instantly adaptive and rewarding.
-                      </div>
-                    </section>
-                    
-                    <br><br>
+            <div class="col-12 animate-card">
+              <div class="card h-100 shadow" style="background-color: rgb(220, 241, 241); border: none;">
+                <div class="card-body">
+                  <p style="text-align: justify;">SIMPLIPIE's personalized learning paths go beyond the surface, actively adapting to the user's pace and learning style. This dynamic approach means that each learning session is finely tuned to maximize growth and understanding. Through specific learning tasks aligned with individual strengths and areas for improvement, SIMPLIPIE establishes itself as a dedicated guide on the educational path, fostering an environment where success is not only achievable but inherently personalized and meaningful.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div id="feature-2" class="col-lg-5 animate-card">
+              <div class="card h-100 shadow" style="border: none;">
+                <img src="images-icons/perrformance2.png" class="card-img-top img-fluid" style="padding: 18%;">
+              </div>
+            </div>
+        
+            <div class="col-lg-7 animate-card">
+              <div class="card h-100 shadow" style="border: none; background-color: rgb(220, 241, 241);">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Real-Time Performance Analytics</h4>
+                  <p style="text-align: justify;">In the realm of educational technology, real-time feedback is a game-changer, and SIMPLIPIE excels in delivering instant, personalized insights through its performance analytics feature. As users engage with the platform, SIMPLIPIE swiftly assesses their performance, providing detailed feedback that goes beyond generic praise. This feature serves as a dynamic compass, highlighting individual strengths for acknowledgment and encouragement, while also pinpointing specific areas for improvement with remarkable precision.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 animate-card">
+              <div class="card h-100 shadow" style="border: none; background-color: rgb(220, 241, 241);">
+                <div class="card-body">
+                  <p style="text-align: justify;">The real-time analytics on SIMPLIPIE act as a constant feedback loop, transforming the learning experience into a proactive and responsive journey. This immediate insight not only deepens the understanding of personal progress but also serves as a powerful motivator, ensuring that each learning session contributes meaningfully to overall development. In this way, SIMPLIPIE revolutionizes the learning process, making it not just informative but also instantly adaptive and rewarding.</p>
+                </div>
+              </div>
+            </div>
 
-                    <br id="feature-3"><br>
+            <div id="feature-3" class="col-lg-5 animate-card">
+              <div class="card h-100 shadow" style="border: none;">
+                <img src="images-icons/unlock2.png" class="card-img-top img-fluid" style="padding: 18%;">
+              </div>
+            </div>
+        
+            <div class="col-lg-7 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Unlockable Topic Advancement</h4>
+                  <p style="text-align: justify;">In the realm of educational technology, real-time feedback is a game-changer, and SIMPLIPIE excels in delivering instant, personalized insights through its performance analytics feature. As users engage with the platform, SIMPLIPIE swiftly assesses their performance, providing detailed feedback that goes beyond generic praise. This feature serves as a dynamic compass, highlighting individual strengths for acknowledgment and encouragement, while also pinpointing specific areas for improvement with remarkable precision.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-12 animate-card">
+              <div class="card h-100 shadow" style="border: none; background-color: rgb(220, 241, 241);">
+                <div class="card-body">
+                  <p style="text-align: justify;">The unlockable topic advancement feature not only recognizes and rewards achievement but also ensures that the learning process is both enjoyable and purposeful. It fosters a sense of accomplishment, motivating users to tackle new topics with enthusiasm and curiosity. In SIMPLIPIE, education becomes a journey where success is not just a destination but a continuous progression through an ever-expanding landscape of knowledge and understanding.</p>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </section>
 
+        <section id="Terms" class="w-100 px-2 pb-3">
+          <div class="col-12 pb-4 animate-card">
+            <div class="card shadow" style="background-color: #2cca96; border: none;">
+              <div class="card-body">
+                <h2 style="text-align: center;">Terms and Conditions</h2>
+              </div>
+            </div>
+          </div>
 
-                    <section>
-                      <div class="container col-xxl-8">
-                          <div class="row flex-lg-row-reverse align-items-center g-4">
-                              <div class="col-12 col-lg-6 text-center"> <!-- Center the image on all screen sizes -->
-                                  <img src="images-icons/unlock2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
-                              </div>
-                              <div class="col-lg-6">
-                                <h4>Unlockable Topic Advancement</h4><br>
-                                SIMPLIPIE introduces an element of gamification to the educational landscape through its innovative unlockable topic advancement feature. Success in a lesson isn't just a marker of comprehension; it becomes a key to unlocking new learning opportunities, creating a dynamic and engaging game-like experience. This unique approach transforms the educational journey into an exciting adventure where users earn and progress through levels, unlocking fresh challenges and insights.
-                              </div>
-                          </div>
-                          <br>The unlockable topic advancement feature not only recognizes and rewards achievement but also ensures that the learning process is both enjoyable and purposeful. It fosters a sense of accomplishment, motivating users to tackle new topics with enthusiasm and curiosity. In SIMPLIPIE, education becomes a journey where success is not just a destination but a continuous progression through an ever-expanding landscape of knowledge and understanding.
-                      </div>
-                    </section>
-                    
-                    <br><br><br>
-                    <hr style="color: black;">
+          <div class="row g-4 pb-4">
+          <div class="col-lg-4 animate-card">
+            <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+              <div class="card-body p-4">
+                <h4 class="card-title ">Acceptance of Terms</h4>
+                <p style="text-align: justify;">By accessing or using SIMPLIPIE, you agree to comply with and be bound by these Terms and Conditions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 animate-card">
+            <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+              <div class="card-body p-4">
+                <h4 class="card-title">Changes to Terms</h4>
+                <p style="text-align: justify;">SIMPLIPIE reserves the right to modify, suspend, or terminate the website and its services, and to amend these Terms and Conditions at any time without prior notice.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 animate-card">
+            <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+              <div class="card-body p-4">
+                <h4 class="card-title">User Registration</h4>
+                <p style="text-align: justify;">Some features of the website may require user registration. You agree to provide accurate and complete information during the registration process and to update such information to keep it accurate and current.</p>
+              </div>
+            </div>
+          </div>
+          </div>
 
-                    <br><br>
+          <div class="row g-4 pb-4">
+            <div class="col-lg-4 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">User Content</h4>
+                  <p style="text-align: justify;">Users may be allowed to submit content to the website. By submitting content, you grant [Your Company Name] a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Prohibited Conduct</h4>
+                  <p style="text-align: justify;">Users agree not to engage in any activity that may disrupt the website's operation or compromise its security. Prohibited activities include but are not limited to hacking, transmitting malware, or engaging in any unlawful or harmful behavior.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Intellectual Property</h4>
+                  <p style="text-align: justify;">All content and materials available on the website, unless otherwise indicated, are protected by intellectual property laws. Users may not use, reproduce, distribute, or create derivative works based on this content without explicit permission.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                    <section id="Terms"><h4>Terms and Conditions for SIMPLIPIE</h4><br><br>
-                    <ol>
-                      <li>
-                        <h5>Acceptance of Terms</h5>
-                        <p>By accessing or using SIMPLIPIE, you agree to comply with and be bound by these Terms and Conditions.</p>
-                      </li>
-                      <li>
-                        <h5>Changes to Terms</h5>
-                        <p>SIMPLIPIE reserves the right to modify, suspend, or terminate the website and its services, and to amend these Terms and Conditions at any time without prior notice.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          User Registration
-                        </h5>
-                        <p>Some features of the website may require user registration. You agree to provide accurate and complete information during the registration process and to update such information to keep it accurate and current.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          User Content
-                        </h5>
-                        <p>Users may be allowed to submit content to the website. By submitting content, you grant [Your Company Name] a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          Prohibited Conduct
-                        </h5>
-                        <p>Users agree not to engage in any activity that may disrupt the website's operation or compromise its security. Prohibited activities include but are not limited to hacking, transmitting malware, or engaging in any unlawful or harmful behavior.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          Intellectual Property
-                        </h5>
-                        <p>All content and materials available on the website, unless otherwise indicated, are protected by intellectual property laws. Users may not use, reproduce, distribute, or create derivative works based on this content without explicit permission.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          Privacy Policy
-                        </h5>
-                        <p>SIMPLIPIE is committed to protecting user privacy. The Privacy Policy, incorporated by reference, outlines how user data is collected, used, and protected.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          Disclaimer of Warranties
-                        </h5>
-                        <p>SIMPLIPIE provides the website "as is" without any warranties, express or implied. Users use the website at their own risk.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          Limitation of Liability
-                        </h5>
-                        <p>SIMPLIPIE is not liable for any direct, indirect, incidental, consequential, or special damages arising out of or in any way connected with the use of the website.</p>
-                      </li>
-                      <li>
-                        <h5>
-                          Contact Information
-                        </h5>
-                        <p>For questions about these Terms and Conditions, please <a href="index_bootsrap.html#Contact">contact</a> us.</p>
-                      </li>
-                    </ol></section>
-                    <br><br>
-                    <hr style="color: black;">
-                    <br><br>
-                    <section id="Commitment"><h4>Our Commitment</h4><br>
-                    We are committed to fostering a supportive learning community. Whether you're a student striving for excellence, an educator seeking innovative tools, or a lifelong learner hungry for knowledge, SIMPLIPIE is here for you.
+          <div class="row g-4">
+            <div class="col-lg-4 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Privacy Policy</h4>
+                  <p style="text-align: justify;">SIMPLIPIE is committed to protecting user privacy. The Privacy Policy, incorporated by reference, outlines how user data is collected, used, and protected.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Limitation of Liability</h4>
+                  <p style="text-align: justify;">SIMPLIPIE is not liable for any direct, indirect, incidental, consequential, or special damages arising out of or in any way connected with the use of the website.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Disclaimer of Warranties</h4>
+                  <p style="text-align: justify;">SIMPLIPIE provides the website "as is" without any warranties, express or implied. Users use the website at their own risk.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:rgb(220, 241, 241) ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Contact Information</h4>
+                  <p style="text-align: justify;">For questions about these Terms and Conditions, please <a href="index_bootsrap.html#Contact">contact</a> us.</p>
+                </div>
+              </div>
+            </div>
+            <section id="Commitment">
+            <div class="col-lg-12 animate-card">
+              <div class="card h-100 shadow" style="border: none;background-color:#2cca96 ;">
+                <div class="card-body p-4">
+                  <h4 class="card-title">Our Commitment</h4>
+                  <p style="text-align: justify;">We are committed to fostering a supportive learning community. Whether you're a student striving for excellence, an educator seeking innovative tools, or a lifelong learner hungry for knowledge, SIMPLIPIE is here for you.
                     <br><br>
                     Join us on this journey of discovery, where we simplify the complexities of math and make learning an adventure. Together, let's embrace the joy of understanding and unlock the endless possibilities that come with a solid foundation in mathematics.</p>
-                  </section>
-                </div><br><!-- /.blog-post -->
+                </div>
+              </div>
+            </section>
+            </div>
+      </section>
+      </main>
 
-          </main><!-- /.container -->
-    
-  </section>
+      <div class="col-lg-3 p-3 text-center">
+        <div class="card h-100 shadow"  style="border: none;background-color: #9fb7d6;">
+          <div class="card-body p-4">
+            <h4 style="text-align: center;" class="card-title">Meet our Developer!</h4><br>
+            <img src="images-icons/profile.png" alt="avatar" class="img-fluid shadow rounded" style="width: 150px; text-align: center;"><br><br>
+            <h3 style="text-align: center;">Jireh Ben Bustillo</h3><br>
+            <p  style="text-align: justify;">Greetings, fellow learners! Today, we are thrilled to introduce Jireh Ben L. Bustillo, the visionary mind shaping SIMPLIPIE into more than just a mathematical tool – it's your personalized learning companion.</p><br>
+            <strong style="text-align: center;">Student Developer</strong><br><br>
+            <p style="text-align: justify;">
+            Currently pursuing a Bachelor's degree in Mathematics with a major in Computer Information Technology (CIT), Jireh represents the fresh and innovative spirit of student developers. His journey in academia directly influences the evolution of SIMPLIPIE as a dynamic learning tool.
+            </p><br>
+            <strong style="text-align: center;">Mathematics Enthusiast</strong><br><br>
+            <p style="text-align: justify;">
+            Jireh's love for mathematics goes beyond textbooks and classrooms. As an enthusiast, he injects a vibrant energy into SIMPLIPIE, ensuring that his fellow students have a tool that not only solves problems but also fosters a deeper understanding and appreciation for mathematical concepts.
+            </p><br>
+            <strong style="text-align: center;">By a Student, For Students</strong><br><br>
+            <p style="text-align: justify;">
+              Recognizing the challenges students face, Jireh is actively involved in tailoring SIMPLIPIE to be a companion in your academic journey. The tool is crafted to simplify complex topics, providing clarity and support to students navigating the diverse landscape of mathematical concepts.
+            </p><br>
+            <strong style="text-align: center;">Innovation on the Rise</strong><br><br>
+            <p style="text-align: justify;">
+              Jireh's innovative spirit is evident in every line of code he contributes to SIMPLIPIE. It's not just a tool; it's a reflection of the dedication and creativity of a student developer passionate about making learning math enjoyable and accessible for all.
+            </p><br>
+
+            <strong style="text-align: center;">Connect with Jireh!</strong><br><br>
+
+            <div class="card mb-4 mb-lg-0" style="background-color: #97adca; border: none;">
+              <div class="card-body p-1">
+                <ul class="list-group list-group-flush rounded-3">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                    <a href="https://www.facebook.com/jirehben.lagumbaybustillo" target="blank"><svg fill="#000000" width="24" height="24" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                      <title>facebook</title>
+                      <path d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path>
+                      </svg></a>
+                    <p class="mb-0">Jireh Ben Bustillo</p>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                    <a href="https://github.com/BenTaught" target="blank"><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4ZM0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#000000"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.183 45.4715C18.9896 45.2218 18.9896 42.9972 19.183 38.798C17.1112 38.8695 15.8022 38.7257 15.256 38.3666C14.4368 37.8279 13.6166 36.1666 12.8889 34.9958C12.1612 33.825 10.546 33.6399 9.8938 33.3782C9.24158 33.1164 9.07785 32.0495 11.691 32.8564C14.3042 33.6633 14.4316 35.8606 15.256 36.3744C16.0804 36.8882 18.0512 36.6634 18.9446 36.2518C19.8379 35.8402 19.7722 34.3077 19.9315 33.7006C20.1329 33.1339 19.423 33.0082 19.4074 33.0036C18.5353 33.0036 13.9537 32.0072 12.6952 27.5705C11.4368 23.1339 13.0579 20.234 13.9227 18.9874C14.4992 18.1563 14.4482 16.3851 13.7697 13.6736C16.2333 13.3588 18.1344 14.1342 19.4732 16C19.4745 16.0107 21.2283 14.9571 24 14.9571C26.7718 14.9571 27.7551 15.8153 28.514 16C29.2728 16.1847 29.8798 12.734 34.5666 13.6736C33.5881 15.5968 32.7686 18 33.3941 18.9874C34.0195 19.9748 36.4742 23.1146 34.9664 27.5705C33.9611 30.5412 31.9851 32.3522 29.0382 33.0036C28.7002 33.1114 28.5313 33.2854 28.5313 33.5254C28.5313 33.8855 28.9881 33.9248 29.6463 35.6116C30.085 36.7361 30.1167 39.9479 29.7413 45.2469C28.7904 45.489 28.0506 45.6515 27.5219 45.7346C26.5845 45.8819 25.5667 45.9645 24.5666 45.9964C23.5666 46.0283 23.2193 46.0247 21.8368 45.896C20.9151 45.8102 20.0305 45.6687 19.183 45.4715Z" fill="#000000"/>
+                      </svg></a>
+                    <p class="mb-0">BenTaught</p>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                    <a href="https://twitter.com/bustillo_j10879" target="_blank" rel="noopener noreferrer"><svg fill="#000000" width="24" height="24" viewBox="-2 -4 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-twitter"><path d='M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z' /></svg></a>
+                    <p class="mb-0">@bustillo_j10879</p>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                    <a href="https://www.instagram.com/pintagur0/?fbclid=IwAR1xI_W9kQH7q1X5n0J0sejQKlCQZDk3xiL0H7V_NjOVe7xsciqYzMmulJU" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 5C6.11929 5 5 6.11929 5 7.5C5 8.88071 6.11929 10 7.5 10C8.88071 10 10 8.88071 10 7.5C10 6.11929 8.88071 5 7.5 5Z" fill="#000000"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z" fill="#000000"/>
+                      </svg></a>
+                    <p class="mb-0">pintagur0</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
 
 
   <footer style="background-image: linear-gradient(to right, #0097B2 , #7ED957);">
@@ -333,6 +504,10 @@
       }
     </script>
 
+    
+
+    
+  <script src="Animation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
