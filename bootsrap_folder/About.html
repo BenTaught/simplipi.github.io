@@ -31,6 +31,9 @@
 .animate-card.show {
     opacity: 1;
 }
+.list-group-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+  }
 
 </style>
 
@@ -45,7 +48,7 @@
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-lg-flex text-center" id="navbarsExample11">
+        <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
           <a class="navbar-brand col-lg-3 me-0 d-none d-lg-block" href="#"></a>
           <ul class="navbar-nav col-lg-5 justify-content-lg-center ps-2 py-2">
             <li class="nav-item">
@@ -87,7 +90,7 @@
                      <div class="modal-footer justify-content-center pt-4"> <!-- Use justify-content-center to center footer buttons -->
                        <button type="button" class="btn btn-primary" onclick = "checkLogin()">Login</button>
                      </div>
-                     <h5 class="container-fluid">Not a member? <a href="signup.html" style="text-decoration: none; color: #00BF63;">Signup now</a></h5>
+                     <h5 class="container-fluid text-center">Not a member? <a href="signup.html" style="text-decoration: none; color: #00BF63;">Signup now</a></h5>
                    </div>
                  </div>
                </div>
@@ -381,17 +384,17 @@
 
             <strong style="text-align: center;">Connect with Jireh!</strong><br><br>
 
-            <div class="card mb-4 mb-lg-0" style="background-color: #97adca; border: none;">
-              <div class="card-body p-1">
+            <div class="card mb-4 mb-lg-0 shadow" style="background-color: #97adca; border: none;">
+              <div class="card-body p-0">
                 <ul class="list-group list-group-flush rounded-3">
-                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3 rounded-top" style="background-color: #97adca;">
                     <a href="https://www.facebook.com/jirehben.lagumbaybustillo" target="blank"><svg fill="#000000" width="24" height="24" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                       <title>facebook</title>
                       <path d="M30.996 16.091c-0.001-8.281-6.714-14.994-14.996-14.994s-14.996 6.714-14.996 14.996c0 7.455 5.44 13.639 12.566 14.8l0.086 0.012v-10.478h-3.808v-4.336h3.808v-3.302c-0.019-0.167-0.029-0.361-0.029-0.557 0-2.923 2.37-5.293 5.293-5.293 0.141 0 0.281 0.006 0.42 0.016l-0.018-0.001c1.199 0.017 2.359 0.123 3.491 0.312l-0.134-0.019v3.69h-1.892c-0.086-0.012-0.185-0.019-0.285-0.019-1.197 0-2.168 0.97-2.168 2.168 0 0.068 0.003 0.135 0.009 0.202l-0.001-0.009v2.812h4.159l-0.665 4.336h-3.494v10.478c7.213-1.174 12.653-7.359 12.654-14.814v-0z"></path>
                       </svg></a>
                     <p class="mb-0">Jireh Ben Bustillo</p>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca;">
                     <a href="https://github.com/BenTaught" target="blank"><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4ZM0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="#000000"/>
@@ -399,11 +402,11 @@
                       </svg></a>
                     <p class="mb-0">BenTaught</p>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3 " style="background-color: #97adca; ">
                     <a href="https://twitter.com/bustillo_j10879" target="_blank" rel="noopener noreferrer"><svg fill="#000000" width="24" height="24" viewBox="-2 -4 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-twitter"><path d='M20 1.907a8.292 8.292 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.31a8.349 8.349 0 0 1-2.607.98A4.12 4.12 0 0 0 13.846.015c-2.266 0-4.103 1.81-4.103 4.04 0 .316.036.625.106.92A11.708 11.708 0 0 1 1.393.754a3.964 3.964 0 0 0-.554 2.03c0 1.403.724 2.64 1.824 3.363A4.151 4.151 0 0 1 .805 5.64v.05c0 1.958 1.415 3.591 3.29 3.963a4.216 4.216 0 0 1-1.08.141c-.265 0-.522-.025-.773-.075a4.098 4.098 0 0 0 3.832 2.807 8.312 8.312 0 0 1-5.095 1.727c-.332 0-.658-.02-.979-.056a11.727 11.727 0 0 0 6.289 1.818c7.547 0 11.673-6.157 11.673-11.496l-.014-.523A8.126 8.126 0 0 0 20 1.907z' /></svg></a>
                     <p class="mb-0">@bustillo_j10879</p>
                   </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca; border: none;">
+                  <li class="list-group-item d-flex justify-content-between align-items-center p-3" style="background-color: #97adca;">
                     <a href="https://www.instagram.com/pintagur0/?fbclid=IwAR1xI_W9kQH7q1X5n0J0sejQKlCQZDk3xiL0H7V_NjOVe7xsciqYzMmulJU" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.5 5C6.11929 5 5 6.11929 5 7.5C5 8.88071 6.11929 10 7.5 10C8.88071 10 10 8.88071 10 7.5C10 6.11929 8.88071 5 7.5 5Z" fill="#000000"/>
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z" fill="#000000"/>
