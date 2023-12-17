@@ -479,18 +479,15 @@
 
   </script>
 
-    <script>
-      function logout() {
-        // Perform logout actions, e.g., clearing session, cookies, etc.
-  
-        // Use history.pushState to replace the current URL with a new one
-        var newUrl = "index_bootsrap.html"; 
-        history.pushState({}, "index_bootsrap.html", newUrl);
-  
-        // Redirect to the new URL
-        window.location.href = newUrl;
-      }
-    </script>    
+<script>
+  function logout() {
+    // Perform logout actions, e.g., clearing session, cookies, etc.
+
+    // Use window.location.replace to replace the current URL with a new one
+    var newUrl = "index_bootsrap.html"; 
+    window.location.replace(newUrl);
+  }
+</script>    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
