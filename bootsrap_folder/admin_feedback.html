@@ -171,7 +171,7 @@
 
       messageInput.addEventListener("keydown", function (event) {
           if (event.key === "Enter" && !event.shiftKey) {
-              event.preventDefault(); // Prevents adding a new line
+              event.preventDefault(); 
               sendMessage();
           }
       });})
@@ -180,26 +180,21 @@
     const selectedMessageDiv = document.getElementById('chat-box');
     const isSelected = element.classList.contains('selected');
 
-    // Remove 'selected' class from all list items
     const listItems = document.querySelectorAll('.list-group-item');
     listItems.forEach(item => {
         item.classList.remove('selected');
-        item.style.backgroundColor = ''; // Reset background color for all items
+        item.style.backgroundColor = ''; 
     });
 
     if (!isSelected) {
-        // Add 'selected' class to the clicked list item
         element.classList.add('selected');
-        // Change background color of the selected item to light blue
         element.style.backgroundColor = 'lightblue';
 
-        // Display the full message in the chat box
         const sender = element.innerText.charAt(0);
         const messageText = element.innerText.substring(1);
         selectedMessageDiv.innerHTML = `<div class="message-container"><div class="chat-message sender-message"><span class="circle sender-circle">${sender}</span> ${messageText}</div></div>`;
         selectedSender = sender;
     } else {
-        // If already selected, clear the chat box
         selectedMessageDiv.innerHTML = '';
         selectedSender = undefined;
     }
@@ -224,8 +219,6 @@
   }
 
   function generateAutomaticReply(sender, userMessage) {
-    // You can customize this function to generate automatic replies based on the sender and user's message
-    // For now, it just returns a placeholder reply
     return `<div class="message-container"><div class="chat-message sender-message"><span class="circle sender-circle">${sender}</span> This is an automatic reply to: ${userMessage}</div></div>`;
   }
   </script>
@@ -235,17 +228,11 @@
 
   <script>
     function logout() {
-      // Perform logout actions, e.g., clearing session, cookies, etc.
-
-      // Use window.location.replace to replace the current URL with a new one
       var newUrl = "index_bootsrap.html"; 
       window.location.replace(newUrl);
     }
   </script>   
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
